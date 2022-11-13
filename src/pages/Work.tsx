@@ -63,16 +63,15 @@ export function Work() {
                 <div className="grid-info">
                   <div className="px-6">
                     <h3 className="grid-info-title">{item.title}</h3>
-                    <div className="hover:underline">
-                      <a href={item.href} target="_blank" rel="noreferrer">
-                        <p className="text-gray-700 text-sm text-center">
-                          {item.subtext}
-                        </p>
-                        <p className="mb-2 text-gray-700 text-sm text-center">
-                          {item.description}
-                        </p>
-                      </a>
-                    </div>
+
+                    <a href={item.href} target="_blank" rel="noreferrer">
+                      <p className="text-gray-700 text-sm text-center">
+                        {item.subtext}
+                      </p>
+                      <p className="mb-2 text-gray-700 text-sm text-center">
+                        {item.description}
+                      </p>
+                    </a>
                   </div>
                 </div>
               </div>
