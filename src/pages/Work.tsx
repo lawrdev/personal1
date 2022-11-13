@@ -3,14 +3,14 @@ import Ajprop from "../assets/img/ajp-full.png";
 import EventImg from "../assets/img/eventImg.jpg";
 import OutlyImg from "../assets/img/outly2.png";
 
-type Project = {
+interface Project {
   img: string;
   title: string;
   subtext: string;
   description: string;
   href?: string;
   border?: boolean;
-};
+}
 type ProjectArr = Project[];
 
 const projects: ProjectArr = [
@@ -20,6 +20,7 @@ const projects: ProjectArr = [
     subtext: "Fullstack Project (MERN) + Redux ToolKit",
     description:
       "Sign up, create, book events and get shareable QR ticket links.",
+    href: "https://eventsapp-t0s8.onrender.com/",
   },
   {
     img: Ajprop,
@@ -62,12 +63,16 @@ export function Work() {
                 <div className="grid-info">
                   <div className="px-6">
                     <h3 className="grid-info-title">{item.title}</h3>
-                    <p className="text-gray-700 text-sm text-center">
-                      {item.subtext}
-                    </p>
-                    <p className="text-gray-700 text-sm text-center">
-                      {item.description}
-                    </p>
+                    <div className="hover:underline">
+                      <a href={item.href} target="_blank" rel="noreferrer">
+                        <p className="text-gray-700 text-sm text-center">
+                          {item.subtext}
+                        </p>
+                        <p className="mb-2 text-gray-700 text-sm text-center">
+                          {item.description}
+                        </p>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
