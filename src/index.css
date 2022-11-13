@@ -24,9 +24,6 @@ a {
   color: #4a0000;
   text-decoration: inherit;
 }
-a:hover {
-  @apply underline decoration-1;
-}
 
 body {
   margin: 0 24px;
