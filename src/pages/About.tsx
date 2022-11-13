@@ -78,7 +78,14 @@ export function About() {
                 </div>
 
                 <div className="my-4 w-fit mx-auto">
-                  <button className="resume-btn">View resume</button>
+                  <a
+                    className="resume-btn"
+                    href="https://docs.google.com/document/d/1mgPXcu7EeuDR78DJhwFql46wJZ48LCKmxXi9quHpmic/edit?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View resume
+                  </a>
                 </div>
               </div>
             </div>
