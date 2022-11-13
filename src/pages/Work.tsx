@@ -41,7 +41,7 @@ const projects: ProjectArr = [
 export function Work() {
   return (
     <>
-      <div className="mt-16">
+      <div className="my-16">
         {/* grid */}
         <Grid container spacing={{ xs: 2 }} columns={{ xs: 4, sm: 8 }}>
           {projects.map((item, index: number) => (
@@ -64,7 +64,12 @@ export function Work() {
                   <div className="px-6">
                     <h3 className="grid-info-title">{item.title}</h3>
 
-                    <a href={item.href} target="_blank" rel="noreferrer">
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:underline decoration-1"
+                    >
                       <p className="text-gray-700 text-sm text-center">
                         {item.subtext}
                       </p>
